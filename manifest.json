@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Pandastic",
+  "description": "We need more pandas in our life",
+  "version": "0.1",
+  "icons": {
+    "16": "panda-icon.png",
+    "32": "panda-icon.png",
+    "48": "panda-icon.png",
+    "128": "panda-icon.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["pandas/*.jpg"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["panda.js"]
+    }
+  ]
+}
